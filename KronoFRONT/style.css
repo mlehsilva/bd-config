@@ -1,0 +1,148 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #FFF0F5;
+    color: #5D5D5D;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 30px;
+    box-shadow: 0 10px 20px rgba(255, 182, 193, 0.3);
+    text-align: center;
+    max-width: 450px;
+    width: 90%;
+    border: 5px solid #FFD1DC;
+    margin-top: 50px; /* Dá espaço para a foto que fica pendurada no topo */
+    position: relative;
+}
+
+/* Estilização do círculo da foto no topo */
+.avatar-container {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    border: 5px solid #FFD1DC;
+    background-color: white;
+    position: absolute;
+    top: -60px; /* Move a foto para a metade da borda do container */
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(255, 182, 193, 0.3);
+}
+
+.avatar-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Garante que a foto não fique esticada */
+}
+
+h1 {
+    color: #FF85A2;
+    font-size: 2.2em;
+    margin-bottom: 5px;
+    margin-top: 40px; /* Empurra o título para baixo para não cobrir a foto */
+}
+
+.tagline {
+    font-size: 0.95em;
+    color: #FFB7C5;
+    margin-bottom: 30px;
+}
+
+/* Campos do formulário */
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    color: #FF9AA2;
+    font-weight: bold;
+    margin-bottom: 8px;
+    font-size: 0.95em;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #FFE4EC;
+    border-radius: 15px;
+    box-sizing: border-box;
+    font-family: inherit;
+    color: #5D5D5D;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+input[type="text"]:focus {
+    border-color: #FFB7C5;
+}
+
+/* Esconde o botão feio padrão do input de arquivo */
+input[type="file"] {
+    display: none;
+}
+
+/* Cria um botão lindo no lugar do input de arquivo */
+.custom-file-upload {
+    display: inline-block;
+    background-color: #FFE4EC;
+    color: #FF85A2;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.2s;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.custom-file-upload:hover {
+    background-color: #FFD1DC;
+}
+
+/* Botão de Salvar Perfil */
+.button {
+    display: inline-block;
+    background-color: #FFB7C5;
+    color: white;
+    padding: 14px 28px;
+    border-radius: 50px;
+    border: none;
+    font-weight: bold;
+    margin-top: 15px;
+    cursor: pointer;
+    font-size: 1em;
+    width: 100%;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.button:hover {
+    background-color: #FF9AA2;
+    transform: scale(1.02);
+}
+
+/* Mensagem de sucesso ou aviso */
+#mensagem {
+    margin-top: 15px;
+    font-size: 0.95em;
+    color: #FF85A2;
+    font-weight: bold;
+}
+
+footer {
+    margin-top: 30px;
+    font-size: 0.9em;
+    color: #FFB7C5;
+    text-align: center;
+}

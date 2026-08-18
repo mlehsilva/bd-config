@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Krono - Cadastro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <!-- Círculo da foto de perfil no topo do container -->
+    <div class="avatar-container">
+      <img id="avatar-preview" src="https://i.pinimg.com/736x/14/0e/2a/140e2a06aaae0db9ce21e21b0bb767a1.jpg" alt="Foto de Perfil">
+    </div>
+
+    <h1>Cadastro</h1>
+    <p class="tagline">crie seu perfil com muita estética e fofura ✨</p>
+  
+    <!-- Formulário de cadastro -->
+    <div class="form-group">
+      <label for="nome">Nome do Usuário:</label>
+      <input type="text" id="nome" placeholder="Digite seu nome aqui...">
+    </div>
+
+    <!-- Campo de upload customizado e fofo -->
+    <div class="form-group">
+      <label for="uploadImg" class="custom-file-upload">
+        Escolher foto de perfil
+      </label>
+      <input type="file" id="uploadImg" accept="image/*">
+    </div>
+
+    <button id="btn" class="button">Salvar Perfil</button>
+
+    <div id="mensagem"></div>
+  </div>
+
+  <footer>
+    <p> Maria Leticia | 2026</p>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
